@@ -1,31 +1,9 @@
 var profile = {
   "name": "Sangvaleap",
-  "image": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+  "image": "https://i.pinimg.com/236x/56/2e/be/562ebed9cd49b9a09baa35eddfe86b00.jpg",
   "email": "sangvaleap.vanny@gmail.com"
 };
 
-List categories = [
-  {"name": "All", "icon": "assets/icons/home.svg"},
-  {"name": "Single Room", "icon": "assets/icons/home.svg"},
-  {"name": "Double Room", "icon": "assets/icons/home.svg"},
-  {"name": "Family Room", "icon": "assets/icons/home.svg"},
-  {"name": "Queen Room", "icon": "assets/icons/home.svg"},
-  {"name": "King Room", "icon": "assets/icons/home.svg"},
-  {"name": "Bungalow", "icon": "assets/icons/home.svg"},
-  {"name": "Single Villa", "icon": "assets/icons/home.svg"},
-  {"name": "Apartment", "icon": "assets/icons/home.svg"},
-];
-
-List cities = [
-  {"name": "Phnom Penh", "icon": "assets/icons/home.svg"},
-  {"name": "Siem Reap", "icon": "assets/icons/home.svg"},
-  {"name": "Sihanoukville", "icon": "assets/icons/home.svg"},
-  {"name": "Battambang", "icon": "assets/icons/home.svg"},
-  {"name": "Mondulkiri", "icon": "assets/icons/home.svg"},
-  {"name": "Kampot", "icon": "assets/icons/home.svg"},
-  {"name": "Pursat", "icon": "assets/icons/home.svg"},
-  {"name": "Steung Treng", "icon": "assets/icons/home.svg"},
-];
 
 List<String> albumImages = [
   "https://images.unsplash.com/photo-1598928636135-d146006ff4be?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
@@ -41,7 +19,6 @@ List features = [
     "image":
     "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
     "price": "Rp. 500.000",
-    "type": categories[1]["name"],
     "rate": "4.5",
     "location": "Phnom Penh",
     "is_favorited": false,
@@ -54,7 +31,6 @@ List features = [
     "name": "Junior Suite",
     "image":"https://images.unsplash.com/photo-1505692952047-1a78307da8f2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2h",
     "price":"Rp. 1.200.000",
-    "type": categories[3]["name"],
     "rate": "4.5",
     "location": "Phnom Penh",
     "is_favorited": true,
@@ -68,7 +44,6 @@ List features = [
     "image":
     "https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
     "price": "Rp. 900.000",
-    "type": categories[2]["name"],
     "rate": "4.5",
     "location": "Phnom Penh",
     "is_favorited": false,
@@ -82,7 +57,6 @@ List features = [
     "image":
     "https://images.unsplash.com/photo-1571508601891-ca5e7a713859?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
     "price": "Rp. 700.000",
-    "type": categories[2]["name"],
     "rate": "4.5",
     "location": "Phnom Penh",
     "is_favorited": false,
@@ -92,51 +66,6 @@ List features = [
   },
 ];
 
-List recommends = [
-  {
-    "id": 110,
-    "name": "Luxury King",
-    "image":
-    "https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-    "price": "\$310",
-    "type": categories[1]["name"],
-    "rate": "4.5",
-    "location": "Phnom Penh",
-    "is_favorited": false,
-    "album_images": albumImages,
-    "description":
-    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document",
-  },
-  {
-    "id": 111,
-    "name": "Classic Room",
-    "image":
-    "https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-    "price": "\$250",
-    "type": categories[2]["name"],
-    "rate": "4.5",
-    "location": "Phnom Penh",
-    "is_favorited": false,
-    "album_images": albumImages,
-    "description":
-    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document",
-  },
-  {
-    "id": 112,
-    "name": "Twin Room",
-    "image":
-    "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-    "price": "\$190",
-    "type": categories[1]["name"],
-    "rate": "4.5",
-    "location": "Phnom Penh",
-    "album_images": albumImages,
-    "is_favorited": false,
-    "description":
-    "Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document",
-  },
-
-];
 
 List facilities = [
   {

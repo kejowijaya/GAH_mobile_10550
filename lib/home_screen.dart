@@ -126,6 +126,9 @@ class _HomePageState extends State<HomePage> {
     ),
       bottomNavigationBar: BottomNavigationBar(
       currentIndex: _currentIndex,
+      backgroundColor: Colors.white,
+      selectedItemColor: Colors.black,
+      unselectedItemColor: Colors.blue,
       onTap: (int index) {
         if (index == 0) {
           Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
@@ -150,6 +153,10 @@ class _HomePageState extends State<HomePage> {
         BottomNavigationBarItem(
           icon: Icon(Icons.bed),
           label: 'Kamar',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person),
+          label: 'Profile',
         ),
       ],
     ),

@@ -48,8 +48,8 @@ class CustomImage extends StatelessWidget {
       ),
       child:
 
-          Image(
-        image: AssetImage(image),
+      Image.network(
+        "https://i.pinimg.com/236x/56/2e/be/562ebed9cd49b9a09baa35eddfe86b00.jpg",
         fit: fit,
       ),
     );
