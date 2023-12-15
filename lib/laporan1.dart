@@ -3,9 +3,6 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:gah_mobile_10550/widgets/NavBarGM.dart';
 import 'package:gah_mobile_10550/laporan2.dart';
-import 'dart:typed_data';
-import 'dart:io';
-import 'package:path_provider/path_provider.dart';
 
 class Laporan1 extends StatefulWidget {
   @override

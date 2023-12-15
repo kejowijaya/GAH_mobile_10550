@@ -5,11 +5,6 @@ import 'package:gah_mobile_10550/riwayat_reservasi.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:gah_mobile_10550/theme/color.dart';
-import 'package:gah_mobile_10550/utils/data.dart';
-import 'package:gah_mobile_10550/widgets/city_item.dart';
-import 'package:gah_mobile_10550/widgets/feature_item.dart';
-import 'package:gah_mobile_10550/widgets/notification_box.dart';
-import 'package:gah_mobile_10550/widgets/recommend_item.dart';
 
 class HomePage extends StatefulWidget {
   @override
